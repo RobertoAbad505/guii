@@ -44,6 +44,9 @@
 		02958052287A400200BBDC3A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958051287A400200BBDC3A /* Colors.swift */; };
 		02958058287A609000BBDC3A /* UserProfile+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958057287A609000BBDC3A /* UserProfile+Feed.swift */; };
 		0295805A287B4CF000BBDC3A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958059287B4CF000BBDC3A /* LocationManager.swift */; };
+		0295806C287C99C100BBDC3A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806B287C99C100BBDC3A /* WeatherViewController.swift */; };
+		0295806E287CB26100BBDC3A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806D287CB26100BBDC3A /* WeatherManager.swift */; };
+		02958070287CB39E00BBDC3A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806F287CB39E00BBDC3A /* Weather.swift */; };
 		029E63362874AA73002DB29C /* drinksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63352874AA73002DB29C /* drinksApi.swift */; };
 		029E63392874ACFD002DB29C /* apiSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63382874ACFD002DB29C /* apiSourceProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +110,9 @@
 		02958051287A400200BBDC3A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		02958057287A609000BBDC3A /* UserProfile+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfile+Feed.swift"; sourceTree = "<group>"; };
 		02958059287B4CF000BBDC3A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0295806B287C99C100BBDC3A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0295806D287CB26100BBDC3A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		0295806F287CB39E00BBDC3A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		029E63352874AA73002DB29C /* drinksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinksApi.swift; sourceTree = "<group>"; };
 		029E63382874ACFD002DB29C /* apiSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +145,7 @@
 		024896592872009600F56C98 /* subclass */ = {
 			isa = PBXGroup;
 			children = (
+				02958068287C998500BBDC3A /* Weather */,
 				02958056287A5F6C00BBDC3A /* createPost */,
 				02958053287A5CF100BBDC3A /* components */,
 				0295804C287A3B0800BBDC3A /* feed */,
@@ -242,6 +249,7 @@
 				024DAC092870B44E006F0B1D /* apiSource.swift */,
 				024DAC0B2870BCF6006F0B1D /* randomUser.swift */,
 				029580212878BA9D00BBDC3A /* newPost.swift */,
+				0295806F287CB39E00BBDC3A /* Weather.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -321,10 +329,19 @@
 			path = createPost;
 			sourceTree = "<group>";
 		};
+		02958068287C998500BBDC3A /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				0295806B287C99C100BBDC3A /* WeatherViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		029E63342874AA47002DB29C /* sourcesManager */ = {
 			isa = PBXGroup;
 			children = (
 				029E63352874AA73002DB29C /* drinksApi.swift */,
+				0295806D287CB26100BBDC3A /* WeatherManager.swift */,
 			);
 			path = sourcesManager;
 			sourceTree = "<group>";
@@ -496,7 +513,10 @@
 				0234E8842877611300348B68 /* enums.swift in Sources */,
 				029580222878BA9D00BBDC3A /* newPost.swift in Sources */,
 				0295804B287A2CFF00BBDC3A /* UserProfileViewController.swift in Sources */,
+				02958070287CB39E00BBDC3A /* Weather.swift in Sources */,
 				0234E882287715FB00348B68 /* CreateStatusViewController.swift in Sources */,
+				0295806E287CB26100BBDC3A /* WeatherManager.swift in Sources */,
+				0295806C287C99C100BBDC3A /* WeatherViewController.swift in Sources */,
 				02958058287A609000BBDC3A /* UserProfile+Feed.swift in Sources */,
 				024DAC0C2870BCF6006F0B1D /* randomUser.swift in Sources */,
 				024DAC0E2870BDA9006F0B1D /* JsonTools.swift in Sources */,

@@ -7,238 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9CEB3AFE-3B13-45BB-B634-FD6C45CAD1C3"
+            uuid = "413AA8F2-17EC-4821-A86A-90803E05D1D3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/FeedControl.swift"
+            filePath = "guii/backend/managers/LocationManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "146C4A7C-32C6-48BF-9474-ECDF332587F5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/views/MainFeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F4A08E8A-C70B-46FE-9E01-FB3B1E48566C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/FeedControl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "awakeFromNib()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F7C1F0E9-768D-4BF0-AF9A-B55F7B59C03A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/FeedControl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "init?(coder:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B3F86614-2F95-44DD-B256-449829F22D99"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/FeedControl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "081F39C3-04D7-4C42-9FEB-D4F3D3FB1FAE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/views/MainFeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "newStatusText(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2092F40F-6108-47A2-957D-2E2103A60CEB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/views/MainFeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "newStatusCamera(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3A45B8E3-53AB-4F1B-98F4-A73F09A0C677"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/CreateStatusViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "05189B74-DB82-4A29-BC2D-43A736491CCF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/CreateStatusViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "btnCreatePost(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0328EF72-C946-41BC-A8D2-CE8AE9D97F8B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/CreateStatusViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "removeMediaFilesClick(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "44497E12-0CF3-43F9-81AF-4F8BAB1E7AAE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/backend/managers/PostsManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "addPost(textContent:images:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4BFED90A-51D2-48CD-B2AC-02BAFA9063C8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/CreateStatusViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "CreateStatusViewController"
-            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "4BFED90A-51D2-48CD-B2AC-02BAFA9063C8 - 795cab3ffccd28a9"
+                  uuid = "413AA8F2-17EC-4821-A86A-90803E05D1D3 - 27fa73b2d0b45575"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "guii.CreateStatusViewController.manager.getter : guii.PostsManager"
+                  symbolName = "guii.LocationManager.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "guii"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/frontend/subclass/CreateStatusViewController.swift"
+                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/backend/managers/LocationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "45">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "124">
                </Location>
                <Location
-                  uuid = "4BFED90A-51D2-48CD-B2AC-02BAFA9063C8 - 7d2516e1ec38e90"
+                  uuid = "413AA8F2-17EC-4821-A86A-90803E05D1D3 - 27fa73b2d0b45575"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "guii.CreateStatusViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; guii.CreateStatusViewController"
+                  symbolName = "guii.LocationManager.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "guii"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/frontend/subclass/CreateStatusViewController.swift"
+                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/backend/managers/LocationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "294">
-               </Location>
-               <Location
-                  uuid = "4BFED90A-51D2-48CD-B2AC-02BAFA9063C8 - fd0035dce4790eaf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "guii.CreateStatusViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;guii.CreateStatusViewController&gt;"
-                  moduleName = "guii"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/frontend/subclass/CreateStatusViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "251">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "212">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -246,31 +55,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "76067437-F93D-4353-A124-E94B006404BE"
+            uuid = "96FBAE13-7B68-4622-ACAD-2F353CB3680B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "guii/backend/managers/PostsManager.swift"
+            filePath = "guii/backend/managers/LocationManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "PostsManager"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "addUserLocation(map:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A80F78DB-8DE6-4A1B-B569-B8E9F55BCF62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/managers/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "addUserLocation(map:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBAD15C6-DE4C-48CF-8C89-5C72F2983871"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/managers/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EC5299C-082D-401B-A5DA-28711DCF55F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/managers/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "LocationManager"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EFB35419-FACD-4253-AC5E-46644DB9EEA7"
+            uuid = "D97D25D5-F959-47F8-9597-D97F5E23DB77"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/userProfile/UserProfileViewController.swift"
+            filePath = "guii/backend/managers/LocationManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "checkAuthStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D9F302A-A2E5-4EDC-8736-52E43FDBB437"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -278,33 +151,257 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "082A333E-D563-4A72-B460-8C9B21265308"
+            uuid = "2AEEC870-2B1A-4D73-815D-498733802ABA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/userProfile/UserProfile+Feed.swift"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "9">
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7695625B-FBE5-42AC-B1ED-279A466B7A60"
+            uuid = "B3F6AFEB-37A9-40E8-B056-2CEF54DECEB6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "guii/frontend/subclass/userProfile/UserProfile+Feed.swift"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "9">
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "initMap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D329DBAB-B519-4A04-883C-596763BA12F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D329DBAB-B519-4A04-883C-596763BA12F3 - 3227106e49c4dd26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "guii.WeatherViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
+                  moduleName = "guii"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/frontend/subclass/Weather/WeatherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "D329DBAB-B519-4A04-883C-596763BA12F3 - 3227106e49c4dd26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "guii.WeatherViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
+                  moduleName = "guii"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Documents/xcodeProyects/guii/guii/frontend/subclass/Weather/WeatherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB31822A-E950-48D2-A983-31E9927D89F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setWeather()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B4257C3-2D68-4CD5-B022-392B898105E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/utils/Extension+URLSession+Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getRequest(url:decoding:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72EFEDB4-7F30-49AF-98CD-3F4D14C181E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/utils/Extension+URLSession+Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getRequest(url:decoding:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AB61ACF-B66F-422E-A2E0-37EEC0029435"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setWeather()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2450849-82A0-4E55-BF06-416709F1D590"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "setWeather()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1E8A699-088A-47D5-BE89-BC8A35DE4EA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "WeatherViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00B77DC2-868E-4879-807C-13B146C6CBAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/frontend/subclass/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A11143D5-148D-4CEC-B8C3-B61986D2F0DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/utils/Extension+URLSession+Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "getAsyncRequest(url:decoding:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65586F99-7B4D-4D62-AB55-AE7750229FCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/utils/Extension+URLSession+Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getRequest(url:decoding:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C7F06AF-FF2E-43D4-A46D-F185B1D3F70E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/managers/sourcesManager/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getWeather(lat:long:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9CD5E5D-842B-46E4-A308-0B7D5F67CB17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "guii/backend/utils/Extension+URLSession+Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getRequest(url:decoding:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

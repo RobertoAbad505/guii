@@ -27,6 +27,7 @@ extension URLSession {
             }
             
             do {
+                var dataString = String(data: data!, encoding: .utf8) ?? ""
                 let jsonResult = try JSONDecoder().decode(decoding, from: data!)
                 completion(.success(jsonResult))
             } catch {
