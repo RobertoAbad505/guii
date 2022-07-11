@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="addPictureCollectionViewCell" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" reuseIdentifier="addPictureCollectionViewCell" id="gTV-IL-0wX" customClass="addPictureCollectionViewCell" customModule="guii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vZ-HH-ydg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="land" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oiG-UN-Eo1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="gyG-lv-2Fr"/>
+                                    <constraint firstAttribute="width" constant="375" id="i9Z-JE-fYX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-0y-8Db">
+                                <rect key="frame" x="310.5" y="0.0" width="64.5" height="46"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="minus.circle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="27" scale="large"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oiG-UN-Eo1" firstAttribute="top" secondItem="7vZ-HH-ydg" secondAttribute="top" id="1xm-b6-5DY"/>
+                            <constraint firstAttribute="trailing" secondItem="oiG-UN-Eo1" secondAttribute="trailing" id="K5Y-3R-MwN"/>
+                            <constraint firstAttribute="bottom" secondItem="oiG-UN-Eo1" secondAttribute="bottom" id="YnT-bn-soP"/>
+                            <constraint firstItem="oiG-UN-Eo1" firstAttribute="leading" secondItem="7vZ-HH-ydg" secondAttribute="leading" id="luc-DM-BbP"/>
+                            <constraint firstAttribute="trailing" secondItem="Se5-0y-8Db" secondAttribute="trailing" id="q3m-Wp-gSB"/>
+                            <constraint firstItem="Se5-0y-8Db" firstAttribute="top" secondItem="7vZ-HH-ydg" secondAttribute="top" id="sPt-T2-Fs0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7vZ-HH-ydg" secondAttribute="trailing" id="e9C-sv-rSQ"/>
+                <constraint firstItem="7vZ-HH-ydg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nZb-s7-vwU"/>
+                <constraint firstAttribute="bottom" secondItem="7vZ-HH-ydg" secondAttribute="bottom" id="sL2-la-eEe"/>
+                <constraint firstItem="7vZ-HH-ydg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x49-cZ-lx8"/>
+            </constraints>
+            <size key="customSize" width="411" height="297"/>
+            <connections>
+                <outlet property="btnDelete" destination="Se5-0y-8Db" id="Tb3-Fm-PcJ"/>
+                <outlet property="imageView" destination="oiG-UN-Eo1" id="duD-QO-sKn"/>
+            </connections>
+            <point key="canvasLocation" x="399.27536231884062" y="177.45535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="land" width="2592" height="1944"/>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

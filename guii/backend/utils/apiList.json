@@ -1,0 +1,39 @@
+ [
+    {
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    }
+    ,{
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    },
+    {
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    },
+    {
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    },
+    {
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    },
+    {
+        "id": 1,
+        "name": "Wheater",
+        "url": "http://www.boredapi.com/api/activity",
+        "apiType": "Entertainment"
+    }
+]
+
