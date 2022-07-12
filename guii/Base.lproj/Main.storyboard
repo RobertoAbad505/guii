@@ -543,6 +543,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXG-7i-gdD">
+                                <rect key="frame" x="318" y="369" width="86" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="repeat.circle.fill" catalog="system" title="reload"/>
+                                <connections>
+                                    <action selector="btnReloadLocation:" destination="fNv-Im-U87" eventType="touchUpInside" id="rSa-jC-uS9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-z7-uh1"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
@@ -594,6 +603,7 @@
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
         <image name="profileIcon" width="32" height="32"/>
+        <image name="repeat.circle.fill" catalog="system" width="128" height="121"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="star.leadinghalf.filled" catalog="system" width="128" height="116"/>
         <image name="sun.max.fill" catalog="system" width="128" height="124"/>

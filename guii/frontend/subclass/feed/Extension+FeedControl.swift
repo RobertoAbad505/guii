@@ -10,26 +10,7 @@ import UIKit
 
 extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
-    
-    
-    func initContent(){
-        //prepare handlers
-//        feedControler.register(UINib(nibName: "feedItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "feedItemCollectionViewCell")
-//        feedControler.delegate = self
-//        feedControler.dataSource = self
-        
-        
-//        source.getMoreContent{ result in
-//            switch (result){
-//            case .success(let newItems):
-////                self.items = newItems
-//                break
-//            case .failure(let error):
-//                print(error)
-//            }
-//            self.contentReady()
-//        }
-    }
+    //EXTENSION FOR
     
     func goCreateStatus(typeStatus: NewStatus){
         let view =  storyboard?.instantiateViewController(withIdentifier: "createNewStatus") as! CreateStatusViewController
@@ -45,7 +26,8 @@ extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "feedItemCollectionViewCell", for: indexPath) as! feedItemCollectionViewCell
-//        cell.imageView.image = UIImage(systemName: "star")
+        cell.setPost(post: items[indexPath.row])
+        cell.parentView = self.view
         return cell
         
     }

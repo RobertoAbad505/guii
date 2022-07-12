@@ -31,6 +31,9 @@ extension URLSession {
                 let jsonResult = try JSONDecoder().decode(decoding, from: data!)
                 completion(.success(jsonResult))
             } catch {
+                print("ERROR AT API REQUEST *************************************************")
+                print(error.localizedDescription)
+                print("***********************************************************************")
                 completion(.failure(error))
             }
         }

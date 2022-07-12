@@ -47,6 +47,11 @@
 		0295806C287C99C100BBDC3A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806B287C99C100BBDC3A /* WeatherViewController.swift */; };
 		0295806E287CB26100BBDC3A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806D287CB26100BBDC3A /* WeatherManager.swift */; };
 		02958070287CB39E00BBDC3A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295806F287CB39E00BBDC3A /* Weather.swift */; };
+		02958073287CD1F200BBDC3A /* PostImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958071287CD1F200BBDC3A /* PostImage+CoreDataClass.swift */; };
+		02958074287CD1F200BBDC3A /* PostImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958072287CD1F200BBDC3A /* PostImage+CoreDataProperties.swift */; };
+		02958076287CD43900BBDC3A /* PostComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958075287CD43900BBDC3A /* PostComponents.swift */; };
+		02958079287CDDBE00BBDC3A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958077287CDDBE00BBDC3A /* ImageCollectionViewCell.swift */; };
+		0295807A287CDDBE00BBDC3A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02958078287CDDBE00BBDC3A /* ImageCollectionViewCell.xib */; };
 		029E63362874AA73002DB29C /* drinksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63352874AA73002DB29C /* drinksApi.swift */; };
 		029E63392874ACFD002DB29C /* apiSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63382874ACFD002DB29C /* apiSourceProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +118,11 @@
 		0295806B287C99C100BBDC3A /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0295806D287CB26100BBDC3A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		0295806F287CB39E00BBDC3A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		02958071287CD1F200BBDC3A /* PostImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostImage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		02958072287CD1F200BBDC3A /* PostImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostImage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		02958075287CD43900BBDC3A /* PostComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponents.swift; sourceTree = "<group>"; };
+		02958077287CDDBE00BBDC3A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		02958078287CDDBE00BBDC3A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		029E63352874AA73002DB29C /* drinksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinksApi.swift; sourceTree = "<group>"; };
 		029E63382874ACFD002DB29C /* apiSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +260,7 @@
 				024DAC0B2870BCF6006F0B1D /* randomUser.swift */,
 				029580212878BA9D00BBDC3A /* newPost.swift */,
 				0295806F287CB39E00BBDC3A /* Weather.swift */,
+				02958075287CD43900BBDC3A /* PostComponents.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -286,6 +297,8 @@
 		029580272879F9F100BBDC3A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				02958071287CD1F200BBDC3A /* PostImage+CoreDataClass.swift */,
+				02958072287CD1F200BBDC3A /* PostImage+CoreDataProperties.swift */,
 				02958045287A2A5900BBDC3A /* UserPost+CoreDataClass.swift */,
 				02958046287A2A5900BBDC3A /* UserPost+CoreDataProperties.swift */,
 			);
@@ -317,6 +330,8 @@
 			children = (
 				029580232878C11000BBDC3A /* addPictureCollectionViewCell.swift */,
 				029580242878C11000BBDC3A /* addPictureCollectionViewCell.xib */,
+				02958077287CDDBE00BBDC3A /* ImageCollectionViewCell.swift */,
+				02958078287CDDBE00BBDC3A /* ImageCollectionViewCell.xib */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -461,6 +476,7 @@
 				024DABBA2870A95B006F0B1D /* LaunchScreen.storyboard in Resources */,
 				029580262878C11000BBDC3A /* addPictureCollectionViewCell.xib in Resources */,
 				024DABB72870A95B006F0B1D /* Assets.xcassets in Resources */,
+				0295807A287CDDBE00BBDC3A /* ImageCollectionViewCell.xib in Resources */,
 				02958050287A3C6300BBDC3A /* feedItemCollectionViewCell.xib in Resources */,
 				024DAC102870BEAF006F0B1D /* apiList.json in Resources */,
 				024DABB22870A956006F0B1D /* Main.storyboard in Resources */,
@@ -501,13 +517,16 @@
 				024DABAB2870A956006F0B1D /* AppDelegate.swift in Sources */,
 				02958047287A2A5900BBDC3A /* UserPost+CoreDataClass.swift in Sources */,
 				024DAC062870B3A2006F0B1D /* ContentManager.swift in Sources */,
+				02958074287CD1F200BBDC3A /* PostImage+CoreDataProperties.swift in Sources */,
 				024DABEC2870AFD5006F0B1D /* randomUserAPI.swift in Sources */,
+				02958076287CD43900BBDC3A /* PostComponents.swift in Sources */,
 				024DABED2870AFD5006F0B1D /* Extension+UIImage.swift in Sources */,
 				024DABAD2870A956006F0B1D /* SceneDelegate.swift in Sources */,
 				0234E8862877752200348B68 /* ImagePickerManager.swift in Sources */,
 				029E63362874AA73002DB29C /* drinksApi.swift in Sources */,
 				02958052287A400200BBDC3A /* Colors.swift in Sources */,
 				029580202878BA7000BBDC3A /* PostsManager.swift in Sources */,
+				02958079287CDDBE00BBDC3A /* ImageCollectionViewCell.swift in Sources */,
 				02958044287A29D200BBDC3A /* guii.xcdatamodeld in Sources */,
 				024DABF02870AFD5006F0B1D /* Extension+ImageCache.swift in Sources */,
 				0234E8842877611300348B68 /* enums.swift in Sources */,
@@ -517,6 +536,7 @@
 				0234E882287715FB00348B68 /* CreateStatusViewController.swift in Sources */,
 				0295806E287CB26100BBDC3A /* WeatherManager.swift in Sources */,
 				0295806C287C99C100BBDC3A /* WeatherViewController.swift in Sources */,
+				02958073287CD1F200BBDC3A /* PostImage+CoreDataClass.swift in Sources */,
 				02958058287A609000BBDC3A /* UserProfile+Feed.swift in Sources */,
 				024DAC0C2870BCF6006F0B1D /* randomUser.swift in Sources */,
 				024DAC0E2870BDA9006F0B1D /* JsonTools.swift in Sources */,

@@ -9,32 +9,25 @@ import UIKit
 
 class MainFeedViewController: UIViewController{
 
-    var items: [UserPost] = [UserPost]()
+    var items: [PostComponents] = [PostComponents]()
     let source = ContentManager()
     @IBOutlet weak var feedControler: UICollectionView!
+    var firsLoad = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //prepare handlers
         feedControler.register(UINib(nibName: "feedItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "feedItemCollectionViewCell")
         feedControler.delegate = self
         feedControler.dataSource = self
-        
-//        Colors.setGradiantBackground(view: feedControler.layer)
-        
-        
-        //init collection view and delegates
-//        initContent()
-        
-        //getRandomContent
         items.append(contentsOf: PostsManager().getPosts())
-        
-        //reload content
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        feedControler.reloadData()
+        if firsLoad{
+            feedControler.reloadData()
+            firsLoad = true
+        }
     }
 
     @IBAction func newStatusText(_ sender: Any) {

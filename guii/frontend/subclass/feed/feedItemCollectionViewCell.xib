@@ -83,7 +83,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LRU-yp-P6r">
                                         <rect key="frame" x="0.0" y="95" width="354" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A88-Hb-t9h">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A88-Hb-t9h">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -227,6 +227,7 @@
                 <outlet property="imgUser" destination="rBj-cI-E8B" id="5Hn-p0-0jX"/>
                 <outlet property="lblLocation" destination="eey-Hz-jlW" id="jhr-qV-fAO"/>
                 <outlet property="lblUserName" destination="OuH-TG-sFm" id="wVd-rN-OtI"/>
+                <outlet property="postCollection" destination="LRU-yp-P6r" id="L1V-5D-bHP"/>
                 <outlet property="postPictures" destination="LRU-yp-P6r" id="p2E-s3-zJ5"/>
                 <outlet property="stackReputation" destination="GlA-ji-Hiz" id="BUb-wz-JVU"/>
                 <outlet property="textFieldContent" destination="Dkk-IL-ca2" id="5UQ-pS-UeB"/>

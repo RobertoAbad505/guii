@@ -28,6 +28,12 @@ class CreateStatusViewController: UIViewController,UIImagePickerControllerDelega
         cvGallery.dataSource = self
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        cvGallery.reloadData()
+    }
+    
+    
     @IBAction func btnCreatePost(_ sender: Any) {
         
         //check no only withe spaces and there is text to add
@@ -43,7 +49,8 @@ class CreateStatusViewController: UIViewController,UIImagePickerControllerDelega
             if (PostsManager().addPost(textContent: text!, images: items))
             {
                 //post saved, go to profile
-                
+                navigationController?.popViewController(animated: true)
+                dismiss(animated: true)
             }
             else{
                 //retry message

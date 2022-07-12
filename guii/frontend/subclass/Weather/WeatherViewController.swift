@@ -50,7 +50,13 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             
         }
     }
-
+    
+    @IBAction func btnReloadLocation(_ sender: Any) {
+        
+        locationManager.startUpdatingLocation()
+        setWeather()
+    }
+    
 }
 
 extension WeatherViewController {
