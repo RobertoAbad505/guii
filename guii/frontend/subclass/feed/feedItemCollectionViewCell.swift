@@ -10,6 +10,7 @@ import UIKit
 class feedItemCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     //control objects
+    @IBOutlet weak var mainbackground: UIView!
     @IBOutlet weak var postCollection: UICollectionView!
     @IBOutlet weak var stackReputation: UIStackView!
     @IBOutlet weak var lblLocation: UILabel!
@@ -23,13 +24,27 @@ class feedItemCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate
     
     public var parentView: UIView!
     private var post : PostComponents!
-    static let identifier = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()
         postPictures.register(ImageCollectionViewCell.nib(), forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
         self.postCollection.delegate = self
         self.postCollection.dataSource = self
+        
+        self.mainbackground.layer.borderWidth = 1
+        self.mainbackground.layer.borderColor = UIColor.lightGray.cgColor
+        self.mainbackground.layer.cornerRadius = 10
+        self.mainbackground.layer.masksToBounds = true
+        
+        
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .horizontal
+//        let width = UIScreen.main.bounds.width
+//        layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 0, right: 5)
+//        layout.itemSize = CGSize(width: width / 2, height: width / 2)
+//        layout.minimumInteritemSpacing = 10
+//        layout.minimumLineSpacing = 0
+//        postCollection.collectionViewLayout = layout
     }
     func userConfig(){
         self.stackReputation.isHidden = true

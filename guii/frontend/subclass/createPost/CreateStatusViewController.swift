@@ -30,6 +30,7 @@ class CreateStatusViewController: UIViewController,UIImagePickerControllerDelega
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         cvGallery.reloadData()
     }
     
@@ -51,22 +52,31 @@ class CreateStatusViewController: UIViewController,UIImagePickerControllerDelega
                 //post saved, go to profile
                 navigationController?.popViewController(animated: true)
                 dismiss(animated: true)
+                Alerts.sendAlert(view: self, title: "Rady!", message: "Great post!")
             }
             else{
                 //retry message
-                let alert = UIAlertController(title: "Oops!", message: "Something go wrong", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                
+                Alerts.sendAlert(view: self, title: "Oops!", message: "Something go wrong")
             }
         }
         else{
             let alert = UIAlertController(title: "Wait!", message: "There is no content for this post, add some pictures or comments for this post", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            
             self.present(alert, animated: true, completion: nil)
         }
     }
     //ADD PICTURES FROM GALLERY OR CAMERA
     @IBAction func addMediaFilesClick() {
+        
+        if items.count == 5 {
+            let alert = UIAlertController(title: "It's enough", message: "Posts only allow 5 pictures per post", preferredStyle: UIAlertController.Style.actionSheet)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
         ImagePickerManager().pickImage(self){ image in
             self.items.append(contentsOf: [image])
             self.cvGallery.reloadData()

@@ -15,6 +15,7 @@ extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewData
     func goCreateStatus(typeStatus: NewStatus){
         let view =  storyboard?.instantiateViewController(withIdentifier: "createNewStatus") as! CreateStatusViewController
         self.navigationController?.show(view, sender: nil)
+        items = PostsManager().getPosts()
     }
     
     func contentReady(){

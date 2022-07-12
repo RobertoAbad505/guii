@@ -24,10 +24,8 @@ class MainFeedViewController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if firsLoad{
-            feedControler.reloadData()
-            firsLoad = true
-        }
+        items = PostsManager().getPosts()
+        feedControler.reloadData()
     }
 
     @IBAction func newStatusText(_ sender: Any) {

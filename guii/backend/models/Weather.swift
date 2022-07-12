@@ -6,16 +6,32 @@
 //
 import Foundation
 struct Weather: Codable {
+    
     var region: String
     var currentConditions: CurrentConditions
-    var next_days : [WeatherDay]
+    var nextDays : [WeatherDay]
+    
+    enum CodingKeys : String, CodingKey {
+        case region
+        case nextDays = "next_days"
+        case currentConditions
+    }
 }
 struct WeatherDay: Codable {
     var day: String
     var comment: String
-    var max_temp: Temperature
-    var min_temp: Temperature
+    var maxTemp: Temperature
+    var minTemp: Temperature
     var iconURL: String
+
+    enum CodingKeys : String, CodingKey {
+        case day
+        case comment
+        case maxTemp = "max_temp"
+        case minTemp = "min_temp"
+        case iconURL
+    }
+    
 }
 struct CurrentConditions: Codable{
     var dayhour: String
@@ -27,8 +43,8 @@ struct CurrentConditions: Codable{
     var comment : String
 }
 struct Temperature : Codable {
-    var c: String
-    var f : String
+    var c: Int
+    var f : Int
 }
 struct Wind : Codable {
     var km : Int

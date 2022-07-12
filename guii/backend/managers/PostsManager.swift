@@ -35,28 +35,16 @@ final class PostsManager{
        
         return true
     }
-    
-    
-    
     func getPosts() -> [PostComponents]{
         let data = database.fetch(UserPost.self).sorted(by: { $0.id > $1.id})
         let images = database.fetch(PostImage.self)
         var posts = [PostComponents]()
-        
         for p in data{
             //let goodGrades = grades.all(where: { $0 > 7 })
             let postImages = images.all(where: { $0.postId == p.id })
             posts.append(contentsOf: [PostComponents(data: p, img: postImages)])
         }
-        
         return posts
     }
-    
-    
 }
 
-extension Array where Element: Equatable {
-func all(where predicate: (Element) -> Bool) -> [Element] {
-return self.compactMap { predicate($0) ? $0 : nil }
-}
-}

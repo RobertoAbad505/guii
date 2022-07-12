@@ -26,13 +26,17 @@ extension URLSession {
                 completion(.failure(error))
             }
             
+            var dataString = ""
+            
             do {
-                var dataString = String(data: data!, encoding: .utf8) ?? ""
+                dataString = String(data: data!, encoding: .utf8) ?? ""
                 let jsonResult = try JSONDecoder().decode(decoding, from: data!)
                 completion(.success(jsonResult))
             } catch {
                 print("ERROR AT API REQUEST *************************************************")
                 print(error.localizedDescription)
+                print(">>>>>response:")
+                print(dataString)
                 print("***********************************************************************")
                 completion(.failure(error))
             }
