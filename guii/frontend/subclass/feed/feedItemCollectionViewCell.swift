@@ -4,7 +4,7 @@
 //
 //  Created by Consultant on 7/9/22.
 //
-
+import LinkPresentation
 import UIKit
 
 class feedItemCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -31,32 +31,32 @@ class feedItemCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate
         self.postCollection.delegate = self
         self.postCollection.dataSource = self
         
+        
         self.mainbackground.layer.borderWidth = 1
-        self.mainbackground.layer.borderColor = UIColor.lightGray.cgColor
+        self.mainbackground.layer.borderColor = UIColor.clear.cgColor
         self.mainbackground.layer.cornerRadius = 10
         self.mainbackground.layer.masksToBounds = true
-        
-        
-//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .horizontal
-//        let width = UIScreen.main.bounds.width
-//        layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 0, right: 5)
-//        layout.itemSize = CGSize(width: width / 2, height: width / 2)
-//        layout.minimumInteritemSpacing = 10
-//        layout.minimumLineSpacing = 0
-//        postCollection.collectionViewLayout = layout
     }
     func userConfig(){
         self.stackReputation.isHidden = true
     }
-    func setPost(post: PostComponents){
+    
+    func setUserPost(post: PostComponents){
         self.post = post
+        setUserPost()
+    }
+    
+    ///TYPE USER POST
+    func setUserPost(){
         textFieldContent.text = post.info.textContent
         self.postCollection.reloadData()
     }
+    
+    ///COLLECTION VIEW DELEGATE FUNCTIONS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         if let countimg = post?.images{
             return countimg.count
+            
         }
         return 0
     }
@@ -78,19 +78,19 @@ class feedItemCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
         newImageView.addGestureRecognizer(tap)
         self.parentView.addSubview(newImageView)
-//        self.navigationController?.isNavigationBarHidden = true
-//        self.tabBarController?.tabBar.isHidden = true
+
     }
     
     @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-////        self.navigationController?.isNavigationBarHidden = false
-//        self.parentView.tabBarController?.tabBar.isHidden = false
         sender.view?.removeFromSuperview()
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
     }
-    
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
 
 }

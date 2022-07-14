@@ -15,7 +15,7 @@ extension UserProfileViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "feedItemCollectionViewCell", for: indexPath) as! feedItemCollectionViewCell
-        cell.setPost(post: userPosts[indexPath.row])
+        cell.setUserPost(post: userPosts[indexPath.row])
         cell.parentView = self.view
         cell.userConfig()
         return cell

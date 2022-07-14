@@ -9,8 +9,11 @@ import Foundation
 
 struct PostComponents{
     
+    var postType: postSource
     var info : UserPost!
     var images: [PostImage]!
+    
+    var data: Any?
     
     init(data: UserPost, img: [PostImage]?){
         self.info = data
@@ -20,6 +23,18 @@ struct PostComponents{
         else{
             self.images = [PostImage]()
         }
+        postType = postSource.userPost
     }
+    
+    init(bwry: Brewery){
+        data = bwry
+        postType = postSource.brewery
+    }
+}
+
+enum postSource{
+    
+    case userPost
+    case brewery
     
 }

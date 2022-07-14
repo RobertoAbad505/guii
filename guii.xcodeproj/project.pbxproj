@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0212F517287E0E1D001C0EEC /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F516287E0E1D001C0EEC /* Collection+Extension.swift */; };
+		0212F51A287E5243001C0EEC /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F519287E5243001C0EEC /* Brewery.swift */; };
+		0212F51E287F21C9001C0EEC /* RoundUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F51D287F21C9001C0EEC /* RoundUtils.swift */; };
+		0212F521287F951D001C0EEC /* BreweryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F51F287F951D001C0EEC /* BreweryCollectionViewCell.swift */; };
+		0212F522287F951D001C0EEC /* BreweryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0212F520287F951D001C0EEC /* BreweryCollectionViewCell.xib */; };
+		0212F524288047B5001C0EEC /* MetadataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212F523288047B5001C0EEC /* MetadataStorage.swift */; };
 		0234E882287715FB00348B68 /* CreateStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234E881287715FB00348B68 /* CreateStatusViewController.swift */; };
 		0234E8842877611300348B68 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234E8832877611300348B68 /* enums.swift */; };
 		0234E8862877752200348B68 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234E8852877752200348B68 /* ImagePickerManager.swift */; };
-		0248965D2872017700F56C98 /* Extension+FeedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248965C2872017700F56C98 /* Extension+FeedControl.swift */; };
+		0248965D2872017700F56C98 /* MainFeedViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248965C2872017700F56C98 /* MainFeedViewController+CollectionView.swift */; };
 		024DABAB2870A956006F0B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024DABAA2870A956006F0B1D /* AppDelegate.swift */; };
 		024DABAD2870A956006F0B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024DABAC2870A956006F0B1D /* SceneDelegate.swift */; };
 		024DABB22870A956006F0B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024DABB02870A956006F0B1D /* Main.storyboard */; };
@@ -54,7 +60,7 @@
 		0295807A287CDDBE00BBDC3A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02958078287CDDBE00BBDC3A /* ImageCollectionViewCell.xib */; };
 		0295807C287D023300BBDC3A /* Extension+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295807B287D023300BBDC3A /* Extension+Array.swift */; };
 		0295807E287D1D3D00BBDC3A /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295807D287D1D3D00BBDC3A /* Alerts.swift */; };
-		029E63362874AA73002DB29C /* drinksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63352874AA73002DB29C /* drinksApi.swift */; };
+		029E63362874AA73002DB29C /* BreweriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63352874AA73002DB29C /* BreweriesManager.swift */; };
 		029E63392874ACFD002DB29C /* apiSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E63382874ACFD002DB29C /* apiSourceProtocol.swift */; };
 		02D10A50287DA2DC00491F72 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D10A4E287DA2DC00491F72 /* WeatherCollectionViewCell.swift */; };
 		02D10A51287DA2DC00491F72 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D10A4F287DA2DC00491F72 /* WeatherCollectionViewCell.xib */; };
@@ -78,10 +84,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0212F516287E0E1D001C0EEC /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		0212F519287E5243001C0EEC /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		0212F51D287F21C9001C0EEC /* RoundUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUtils.swift; sourceTree = "<group>"; };
+		0212F51F287F951D001C0EEC /* BreweryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0212F520287F951D001C0EEC /* BreweryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreweryCollectionViewCell.xib; sourceTree = "<group>"; };
+		0212F523288047B5001C0EEC /* MetadataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataStorage.swift; sourceTree = "<group>"; };
 		0234E881287715FB00348B68 /* CreateStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStatusViewController.swift; sourceTree = "<group>"; };
 		0234E8832877611300348B68 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 		0234E8852877752200348B68 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
-		0248965C2872017700F56C98 /* Extension+FeedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FeedControl.swift"; sourceTree = "<group>"; };
+		0248965C2872017700F56C98 /* MainFeedViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainFeedViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		024DABA72870A956006F0B1D /* guii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024DABAA2870A956006F0B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024DABAC2870A956006F0B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +141,7 @@
 		02958078287CDDBE00BBDC3A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		0295807B287D023300BBDC3A /* Extension+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array.swift"; sourceTree = "<group>"; };
 		0295807D287D1D3D00BBDC3A /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
-		029E63352874AA73002DB29C /* drinksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinksApi.swift; sourceTree = "<group>"; };
+		029E63352874AA73002DB29C /* BreweriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesManager.swift; sourceTree = "<group>"; };
 		029E63382874ACFD002DB29C /* apiSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiSourceProtocol.swift; sourceTree = "<group>"; };
 		02D10A4E287DA2DC00491F72 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		02D10A4F287DA2DC00491F72 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -160,6 +172,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0212F518287E4E2B001C0EEC /* userAccess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = userAccess;
+			sourceTree = "<group>";
+		};
 		024896592872009600F56C98 /* subclass */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +277,7 @@
 				02958051287A400200BBDC3A /* Colors.swift */,
 				0295807B287D023300BBDC3A /* Extension+Array.swift */,
 				0295807D287D1D3D00BBDC3A /* Alerts.swift */,
+				0212F51D287F21C9001C0EEC /* RoundUtils.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -271,6 +291,7 @@
 				029580212878BA9D00BBDC3A /* newPost.swift */,
 				0295806F287CB39E00BBDC3A /* Weather.swift */,
 				02958075287CD43900BBDC3A /* PostComponents.swift */,
+				0212F519287E5243001C0EEC /* Brewery.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -278,7 +299,7 @@
 		024DAC012870B0C8006F0B1D /* frontend */ = {
 			isa = PBXGroup;
 			children = (
-				0295801E2878B97200BBDC3A /* modules */,
+				0212F518287E4E2B001C0EEC /* userAccess */,
 				024896592872009600F56C98 /* subclass */,
 			);
 			path = frontend;
@@ -293,15 +314,9 @@
 				0295801F2878BA7000BBDC3A /* PostsManager.swift */,
 				0295802C287A04C800BBDC3A /* DataBaseHandler.swift */,
 				02958059287B4CF000BBDC3A /* LocationManager.swift */,
+				0212F523288047B5001C0EEC /* MetadataStorage.swift */,
 			);
 			path = managers;
-			sourceTree = "<group>";
-		};
-		0295801E2878B97200BBDC3A /* modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = modules;
 			sourceTree = "<group>";
 		};
 		029580272879F9F100BBDC3A /* CoreData */ = {
@@ -327,10 +342,13 @@
 		0295804C287A3B0800BBDC3A /* feed */ = {
 			isa = PBXGroup;
 			children = (
-				0248965C2872017700F56C98 /* Extension+FeedControl.swift */,
+				0248965C2872017700F56C98 /* MainFeedViewController+CollectionView.swift */,
 				024DAC022870B112006F0B1D /* MainFeedViewController.swift */,
 				0295804D287A3C6300BBDC3A /* feedItemCollectionViewCell.swift */,
 				0295804E287A3C6300BBDC3A /* feedItemCollectionViewCell.xib */,
+				0212F516287E0E1D001C0EEC /* Collection+Extension.swift */,
+				0212F51F287F951D001C0EEC /* BreweryCollectionViewCell.swift */,
+				0212F520287F951D001C0EEC /* BreweryCollectionViewCell.xib */,
 			);
 			path = feed;
 			sourceTree = "<group>";
@@ -367,7 +385,7 @@
 		029E63342874AA47002DB29C /* sourcesManager */ = {
 			isa = PBXGroup;
 			children = (
-				029E63352874AA73002DB29C /* drinksApi.swift */,
+				029E63352874AA73002DB29C /* BreweriesManager.swift */,
 				0295806D287CB26100BBDC3A /* WeatherManager.swift */,
 			);
 			path = sourcesManager;
@@ -485,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0212F522287F951D001C0EEC /* BreweryCollectionViewCell.xib in Resources */,
 				024DABBA2870A95B006F0B1D /* LaunchScreen.storyboard in Resources */,
 				029580262878C11000BBDC3A /* addPictureCollectionViewCell.xib in Resources */,
 				024DABB72870A95B006F0B1D /* Assets.xcassets in Resources */,
@@ -517,15 +536,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0212F517287E0E1D001C0EEC /* Collection+Extension.swift in Sources */,
 				024DABEF2870AFD5006F0B1D /* Extension+URLSession+Request.swift in Sources */,
 				02958048287A2A5900BBDC3A /* UserPost+CoreDataProperties.swift in Sources */,
 				0295805A287B4CF000BBDC3A /* LocationManager.swift in Sources */,
-				0248965D2872017700F56C98 /* Extension+FeedControl.swift in Sources */,
+				0248965D2872017700F56C98 /* MainFeedViewController+CollectionView.swift in Sources */,
 				024DAC032870B112006F0B1D /* MainFeedViewController.swift in Sources */,
 				024DABEE2870AFD5006F0B1D /* Extension+URLSessionError.swift in Sources */,
 				0295804F287A3C6300BBDC3A /* feedItemCollectionViewCell.swift in Sources */,
 				024DAC0A2870B44E006F0B1D /* apiSource.swift in Sources */,
 				029580252878C11000BBDC3A /* addPictureCollectionViewCell.swift in Sources */,
+				0212F51A287E5243001C0EEC /* Brewery.swift in Sources */,
 				0295802D287A04C800BBDC3A /* DataBaseHandler.swift in Sources */,
 				024DABAB2870A956006F0B1D /* AppDelegate.swift in Sources */,
 				02958047287A2A5900BBDC3A /* UserPost+CoreDataClass.swift in Sources */,
@@ -536,9 +557,10 @@
 				024DABED2870AFD5006F0B1D /* Extension+UIImage.swift in Sources */,
 				024DABAD2870A956006F0B1D /* SceneDelegate.swift in Sources */,
 				0234E8862877752200348B68 /* ImagePickerManager.swift in Sources */,
-				029E63362874AA73002DB29C /* drinksApi.swift in Sources */,
+				029E63362874AA73002DB29C /* BreweriesManager.swift in Sources */,
 				02958052287A400200BBDC3A /* Colors.swift in Sources */,
 				029580202878BA7000BBDC3A /* PostsManager.swift in Sources */,
+				0212F51E287F21C9001C0EEC /* RoundUtils.swift in Sources */,
 				02958079287CDDBE00BBDC3A /* ImageCollectionViewCell.swift in Sources */,
 				02958044287A29D200BBDC3A /* guii.xcdatamodeld in Sources */,
 				024DABF02870AFD5006F0B1D /* Extension+ImageCache.swift in Sources */,
@@ -550,6 +572,8 @@
 				0295807C287D023300BBDC3A /* Extension+Array.swift in Sources */,
 				0234E882287715FB00348B68 /* CreateStatusViewController.swift in Sources */,
 				0295806E287CB26100BBDC3A /* WeatherManager.swift in Sources */,
+				0212F521287F951D001C0EEC /* BreweryCollectionViewCell.swift in Sources */,
+				0212F524288047B5001C0EEC /* MetadataStorage.swift in Sources */,
 				0295806C287C99C100BBDC3A /* WeatherViewController.swift in Sources */,
 				02958073287CD1F200BBDC3A /* PostImage+CoreDataClass.swift in Sources */,
 				0295807E287D1D3D00BBDC3A /* Alerts.swift in Sources */,
@@ -662,7 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -716,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

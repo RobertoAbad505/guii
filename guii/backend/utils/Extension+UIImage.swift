@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 
 
+
 extension UIImageView{
     
     /// This method extends the UIImageView to download images by URL string

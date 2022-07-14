@@ -8,23 +8,31 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class LocationManager : NSObject, CLLocationManagerDelegate, MKMapViewDelegate {
+final class LocationManager : NSObject, CLLocationManagerDelegate, MKMapViewDelegate {
+    
     
     // Create a CLLocationManager and assign a delegate
     private let locationManager = CLLocationManager()
-    private var userLocation: CLLocationCoordinate2D?
+    var userLocation: CLLocationCoordinate2D?
     private var region : MKCoordinateRegion?
     private var enabled : Bool = false
     
     override init(){
         super.init()
         super.awakeFromNib()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
         
         if (CLLocationManager.locationServicesEnabled())
         {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.requestAlwaysAuthorization()
+            checkAuthStatus()
+        }
+    }
+    
+    func setLocation(){
+        if (CLLocationManager.locationServicesEnabled())
+        {
             checkAuthStatus()
         }
     }
@@ -35,7 +43,7 @@ class LocationManager : NSObject, CLLocationManagerDelegate, MKMapViewDelegate {
         
         //basic settings for map kit view
         let annotation = MKPointAnnotation()
-        annotation.coordinate = userLocation!
+        annotation.coordinate = self.userLocation!
         map.addAnnotation(annotation)
         annotation.title = "Your are here!"
         annotation.subtitle = "Look for places nearby"
@@ -46,8 +54,8 @@ class LocationManager : NSObject, CLLocationManagerDelegate, MKMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let location = locations.last{
-            userLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-            region = MKCoordinateRegion(center: userLocation!, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            self.userLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            region = MKCoordinateRegion(center: self.userLocation!, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
             
             enabled = true
         }
